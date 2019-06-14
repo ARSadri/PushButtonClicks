@@ -1,8 +1,8 @@
 # PushButton Events Modelling Library
-This library is written for simple interaction with a push button by monitoring it periodically. This repo is different from [older PushButton Library](https://github.com/pololu/pushbutton-arduino), in that it is easier to use and supports modelling long press and release besides a click, double click, and any other number of clicks. This makes it suitable for touchpads as well.
+This library is written for simple interaction with a switch by monitoring it periodically. This repo is different from [older PushButton Library](https://github.com/pololu/pushbutton-arduino), in that it is easier to use and supports modelling long press/release besides a click, double click, and any other number of clicks. This makes it suitable for touchpads or counting laser pulses as well. This library was first designed for modeling any kind of 1-bit digital event. It is simply advertised for Arduino and PushButtons but the library can be used in any other platform.
 
 ## Summary
-This is a repo for a C++ library to support detection of events coming from a PushButton or a switch or touchpads.
+This is a repo for a C++ library to support detection of events coming from a PushButton, a switch, a touchpad or laser pulses.
 
 ## Supported platforms
 This library is written in simple C++ with no dependencies. However, it is tested for Arduino - STM32duino Maple mini and ESP32.
@@ -27,7 +27,7 @@ the construction accepts inputs:
 The check routine must be called together with two inputs:
 
 * Current time: for example in Arduino millis() is perfect which gives the time of running the system in milliseconds.
-* current state of the PushButton voltage: 0 or 1. e.g. in Arduino digitalRead(PushButtonPin)
+* current state of the PushButton voltage: 0 or 1. e.g. in Arduino digitalRead(PushButtonPin). 
 
 The output of the Check routine can be numbers 0,1,2,3,...:
 
