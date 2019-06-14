@@ -33,7 +33,7 @@ and so on
 // pullups are activated by digitalWrite(PushButtonPin, HIGH)
 
 #include "Arduino.h"
-#include "PushButton.h"
+#include "PushButtonClicks.h"
 
 PushButton myButton;	//default settings are recommended!
 #define myButtonPin PC15
