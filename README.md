@@ -38,6 +38,6 @@ The output of the Check routine can be:
 4. Double-click
 5. Triple-click
 6. four clicks
-7. and upto n=255: n-2 clicks
+7. and up to n=255: n-2 clicks
 
 Good Luck!
