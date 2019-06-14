@@ -27,14 +27,14 @@
 #define PUSHBUTTON_H_
 
 class PushButton{
-	unsigned long DeadDuration;				//be dead for a while after the last event
-											//may init,  default = 100 (debounce x 2)
+	unsigned long DeadDuration;		//be dead for a while after the last event
+						//may init,  default = 100 (debounce x 2)
 	unsigned long longDurationThreshold;	//Threshold at which its been a long press
-											//may init,  default = 2000
-	unsigned long debounceThreshold;		//Threshold below which its a bounce
-											//may init,  default = 50
-	bool pressed;							//Pin voltage level when pressed
-											//may init,  default = LOW
+						//may init,  default = 2000
+	unsigned long debounceThreshold;	//Threshold below which its a bounce
+						//may init,  default = 50
+	bool pressed;				//Pin voltage level when pressed
+						//may init,  default = LOW
 	unsigned long lastCheckedTime;
 	unsigned long pressedDuratoin;
 	unsigned long lastEventTime;
