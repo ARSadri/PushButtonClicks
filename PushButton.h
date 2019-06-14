@@ -39,11 +39,12 @@ class PushButton{
 	unsigned long pressedDuratoin;
 	unsigned long lastEventTime;
 	bool longPressflag;
+	unsigned char shortPressedCnt;
 
 public:
-	PushButton(unsigned long inDeadDuration = 100,
-			   unsigned long inlongDurationThreshold = 1000,
-			   unsigned long indebounceThreshold = 50,
+	PushButton(unsigned long inDeadDuration = 140,
+			   unsigned long inlongDurationThreshold = 500,
+			   unsigned long indebounceThreshold = 70,
 			   bool inpressed = 0);
 
 	unsigned char buttonCheck(const unsigned int current_millies, bool currentPinStatus);
