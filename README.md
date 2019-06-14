@@ -1,7 +1,9 @@
 # PushButton
 This is a repo for a C++ library to support detection of events comming from a PushButton.
 
-This library is written in simple C++ with no dependency. It is tested for Arduino - STM32duino Maple mini and ESP32.
+This library is written in simple C++ with no dependencies. It is tested for Arduino - STM32duino Maple mini and ESP32.
+
+Look at the Test file written for Arduino.
 
 An object PushButton must be constructred globally and its check rutine must be called periodically. The output of the routin shows the events. 
 
