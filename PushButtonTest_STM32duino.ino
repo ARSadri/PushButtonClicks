@@ -1,5 +1,5 @@
 #include "Arduino.h"
-#include "PushButton/PushButton.h"
+#include "PushButton.h"
 
 PushButton myButton;	//default settings are recommended!
 //PushButton myButton(200, 1000, 100, 1);	//example of how to set the button
