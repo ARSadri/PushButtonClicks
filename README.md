@@ -16,6 +16,30 @@ Just connect a pin to a switch whose other side is connected to the ground and a
 ### software
 An object PushButton must be constructed globally and its check routine must be called periodically. The output of the routine shows the events. Please check the example code and consider the following.
 
+```
+#include "Arduino.h"
+#include "PushButton.h"
+PushButton myButton;	//default settings are recommended!
+#define myButtonPin PC15
+void setup()
+{
+	Serial.begin(115200);
+	pinMode(myButtonPin, INPUT_PULLUP);
+}
+void loop()
+{
+	switch(myButton.buttonCheck(millis(), digitalRead(myButtonPin))) {
+		case 0 : Serial.println("Nothing or Bounce"); break;
+		case 1 : Serial.println("Pressed and not released for a long time"); break;
+		case 2 : Serial.println("Pressed and released after a long time"); break;
+		case 3 : Serial.println("A click"); break;
+		case 4 : Serial.println("Double click"); break;
+		case 5 : Serial.println("Triple click"); break;
+	}
+	delay(35);
+}
+```
+
 the construction of the object accepts inputs:
 
 * DeadDuration: That is the duration that push-button is dead between events; DEFAULT: 150
