@@ -1,5 +1,4 @@
-//////////////// Example /////////////
-/*
+/* Example:
 PushButton myButton(75, 500, 150, 1);	//example of how to set the button
 DeadDuration is set to 150ms
 longDurationThreshold is set to 500ms
