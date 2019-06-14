@@ -43,7 +43,7 @@ void loop()
 the construction of the object accepts inputs:
 
 * DeadDuration: That is the duration that push-button is dead between events; DEFAULT: 150
-* longDurationThreshold: That is the duration that a key must be pressed to be considered as long time; DEFAULT: 500
+* longDurationThreshold: That is the duration that a key must be pressed in to be considered as long time; DEFAULT: 500
 * debounceThreshold: That is the minimum duration that the button must be pressed to be considered as an event, i.e. debouncing; DEFAULT: 75    
 * pressed: the voltage state when pressed; DEFAULT: 0   (This is because usually, microcontrollers have an internal pull-up and button is active LOW)
 
