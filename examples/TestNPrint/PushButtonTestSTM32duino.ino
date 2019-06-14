@@ -56,5 +56,5 @@ void loop()
 		case 6 : Serial.println("Four clicks"); break;
 		case 7 : Serial.println("Five clicks"); break;
 	}
-	delay(10);
+	delay(35);	//its best if the delay between checkings is less than half of the debouncing duration
 }
