@@ -21,6 +21,8 @@
 // if button is pressed and not released, when it is released the output
 // n will be 3 and then it will be zero.
 
+#pragma once
+
 #ifndef PUSHBUTTON_H_
 #define PUSHBUTTON_H_
 
