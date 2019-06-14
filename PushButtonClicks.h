@@ -1,5 +1,5 @@
 /*
- * PushButton.h
+ * PushButtonClicks.h
  *
  *  Created on: 13 Jun. 2019
  *      Author: Alireza Sadri
@@ -23,8 +23,8 @@
 
 #pragma once
 
-#ifndef PUSHBUTTON_H_
-#define PUSHBUTTON_H_
+#ifndef PUSHBUTTONCLICKS_H_
+#define PUSHBUTTONCLICKS_H_
 
 class PushButton{
 	unsigned long DeadDuration;		//be dead for a while after the last event
@@ -50,4 +50,4 @@ public:
 	unsigned char buttonCheck(const unsigned int current_millies, bool currentPinStatus);
 };
 
-#endif /* PUSHBUTTON_H_ */
+#endif /* PUSHBUTTONCLICKS_H_ */
