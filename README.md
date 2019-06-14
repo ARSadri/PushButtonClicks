@@ -29,7 +29,7 @@ The check routine must be called together with two inputs:
 1. Current time: for example in Arduino millis() is perfect which gives the time of running the system in milliseconds.
 2. current state of the PushButton voltage: 0 or 1. e.g. in Arduino digitalRead(PushButtonPin)
 
-The output of the Check routine can be:
+The output of the Check routine can be numbers 0,1,2,3,...:
 
 0. nothing or bounce
 1. long press with no release
@@ -39,5 +39,3 @@ The output of the Check routine can be:
 5. Triple-click
 6. four clicks
 7. and up to n=255: n-2 clicks
-
-Good Luck!
