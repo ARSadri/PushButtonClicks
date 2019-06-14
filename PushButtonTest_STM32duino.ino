@@ -1,8 +1,3 @@
-#include "Arduino.h"
-#include "PushButton.h"
-
-PushButton myButton;	//default settings are recommended!
-
 //////////////// Example /////////////
 /*
 PushButton myButton(75, 500, 150, 1);	//example of how to set the button
@@ -35,6 +30,11 @@ _____|     |____________|     |______
 and so on
 */
 
+
+#include "Arduino.h"
+#include "PushButton.h"
+
+PushButton myButton;	//default settings are recommended!
 
 #define myButtonPin PC15
 
