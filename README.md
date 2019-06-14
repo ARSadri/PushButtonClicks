@@ -14,15 +14,14 @@ Look at the example file written for Arduino.
 Just connect a pin to a switch whose other side is connected to the ground and activate the pull-up resistor inside the microcontroller.
 
 ### software
-An object PushButton must be constructed globally and its check routine must be called periodically. The output of the routine shows the events. 
+An object PushButton must be constructed globally and its check routine must be called periodically. The output of the routine shows the events. Please check the example code and consider the following.
 
-the construction accepts inputs:
+the construction of the object accepts inputs:
 
 * DeadDuration: That is the duration that push-button is dead between events; DEFAULT: 150
 * longDurationThreshold: That is the duration that a key must be pressed to be considered as long time; DEFAULT: 500
 * debounceThreshold: That is the minimum duration that the button must be pressed to be considered as an event, i.e. debouncing; DEFAULT: 75    
 * pressed: the voltage state when pressed; DEFAULT: 0   (This is because usually, microcontrollers have an internal pull-up and button is active LOW)
-
 
 The check routine must be called together with two inputs:
 
