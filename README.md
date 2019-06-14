@@ -1,4 +1,4 @@
-# PushButton Event Modelling Library
+# A Push Button Event Modelling Library
 This library is written for simple interaction with a switch by monitoring it periodically. This repo is different from [older PushButton Library](https://github.com/pololu/pushbutton-arduino), in that it is easier to use and supports modelling long press/release besides a click, double click, and any other number of clicks. This makes it suitable for touchpads or counting laser pulses as well. This library was first designed for modeling any kind of 1-bit digital event. It is simply advertised for Arduino and PushButtons but the library can be used in any other platform.
 
 ## Summary
@@ -18,7 +18,7 @@ An object PushButton must be constructed globally and its check routine must be 
 
 ```
 #include "Arduino.h"
-#include "PushButton.h"
+#include "PushButtonClicks.h"
 PushButton myButton;	//default settings are recommended!
 #define myButtonPin PC15
 void setup()
