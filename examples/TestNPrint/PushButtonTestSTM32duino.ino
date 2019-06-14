@@ -36,9 +36,7 @@ and so on
 #include "PushButton.h"
 
 PushButton myButton;	//default settings are recommended!
-
 #define myButtonPin PC15
-
 void setup()
 {
 	Serial.begin(115200);
@@ -48,10 +46,7 @@ void setup()
 // The loop function is called in an endless loop
 void loop()
 {
-	unsigned long current_millis = millis();
-	bool current_pin_state = digitalRead(myButtonPin);
-	unsigned char myButton_clicked_mode = myButton.buttonCheck(current_millis, current_pin_state);
-	switch(myButton_clicked_mode) {
+	switch(myButton.buttonCheck(millis(), digitalRead(myButtonPin))) {
 		case 0 : Serial.println("Nothing or Bounce"); break;
 		case 1 : Serial.println("Pressed and not released for a long time"); break;
 		case 2 : Serial.println("Pressed and released after a long time"); break;
