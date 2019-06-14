@@ -26,8 +26,8 @@ the construction accepts inputs:
 
 The check routine must be called together with two inputs:
 
-1. Current time: for example in Arduino millis() is perfect which gives the time of running the system in milliseconds.
-2. current state of the PushButton voltage: 0 or 1. e.g. in Arduino digitalRead(PushButtonPin)
+* Current time: for example in Arduino millis() is perfect which gives the time of running the system in milliseconds.
+* current state of the PushButton voltage: 0 or 1. e.g. in Arduino digitalRead(PushButtonPin)
 
 The output of the Check routine can be numbers 0,1,2,3,...:
 
