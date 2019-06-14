@@ -1,4 +1,4 @@
-/* Example:
+/* Example of initilization:
 PushButton myButton(75, 500, 150, 1);	//example of how to set the button
 DeadDuration is set to 150ms
 longDurationThreshold is set to 500ms
@@ -29,6 +29,9 @@ _____|     |____________|     |______
 and so on
 */
 
+// This code is written for STM32duino
+// for Arduino Uno make sure that pinMode is INPUT and 
+// pullups are activated by digitalWrite(PushButtonPin, HIGH)
 
 #include "Arduino.h"
 #include "PushButton.h"
