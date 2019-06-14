@@ -5,7 +5,7 @@
  *      Author: Alireza Sadri
  */
 
-#include "PushButton.h"
+#include "PushButtonClicks.h"
 //The constructor
 PushButton::PushButton(unsigned long inDeadDuration, unsigned long inlongDurationThreshold, unsigned long indebounceThreshold, bool inpressed) {
 	DeadDuration = inDeadDuration;
