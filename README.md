@@ -38,6 +38,7 @@ The output of the Check routine can be:
 4. Double-click
 5. Triple-click
 6. four clicks
+
 n. n-2 clicks up to n = 255
 
 Good Luck!
